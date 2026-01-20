@@ -1,1 +1,1 @@
-# Official_web
+A parking booking system where user books a parking spot remotely according to vehicle type, gets a QR code which is verified upon visiting the field then provided access to their pre booked spot. <p style="font-size:10px;" >This is just a temporary repository.
