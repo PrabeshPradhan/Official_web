@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content ="width=device-width initial-scale=1.0">
+  <title>Testing Page</title>
+  <style>
+    body{
+        background-color: rgb(177, 172, 139);
+        
+    }
+  </style>
 </head>
 <body>
-   <h1>Welcome to a new webpage.</h1>
+    <h1>Parking Booking System</h1>
+  <h2 style="display: flex;">
+    This is a simple display of what features are curently implemented as of now.
+  </h2>
+  <button id="toggle">Dark Mode</button>
+    <fieldset style="min-width: 125px; max-width: 250px;">
+      <legend>
+      Features implemented
+    </legend>
+    <ol>
+    <li>Home page.---- <a href="../html/home.html">Home</a></li>
+    <li>Login page ---- <a href="../html/login.html">Login</a></li>
+    </ol>
+
+    </fieldset>
+    <fieldset style="min-width: 125px; max-width: 250px;">
+        <legend>Features not implemented</legend>
+        <ol>
+            <li>Parking Dashboard</li>
+            <li>Features</li>
+            <li>Contact us</li>
+        </ol>
+    </fieldset>
+<script>
+    let btn = document.getElementById("toggle");
+let body = document.getElementsByTagName("body");
+
+btn.addEventListener("click", () => {
+    if (body[0].style.backgroundColor == "black"){
+        body[0].style.backgroundColor = "rgb(177, 172, 139)";
+        body[0].style.color = "black";
+        btn.textContent = "Dark Mode";
+    }
+    else{
+        body[0].style.transition = "2s ease-in-out"; 
+        body[0].style.backgroundColor = "black";
+        body[0].style.color = "white";
+        btn.textContent = "Light Mode";
+        
+    }
+});
+</script>
 </body>
 </html>
