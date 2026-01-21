@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+}
+
+h2 {
+    text-align: center;
+}
+
+.booking-form {
+    width: 300px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 6px;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 8px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #1a252f;
+}
