@@ -14,16 +14,17 @@ body {
     display: flex;
 }
 
-.left {
+.left, .right {
     width: 50%;
-    background: linear-gradient(#3A7CA5, #C84B31);
     position: relative;
 }
 
+.left {
+    background: linear-gradient(#3A7CA5, #C84B31);
+}
+
 .right {
-    width: 50%;
     background: linear-gradient(#0B132B, #3A3A3A);
-    position: relative;
 }
 
 .sun {
@@ -117,10 +118,6 @@ body {
     cursor: pointer;
 }
 
-.box button:hover {
-    background: #0B132B;
-}
-
 .switch {
     text-align: center;
     margin-top: 12px;
@@ -134,4 +131,24 @@ body {
 
 #register {
     display: none;
+}
+@media screen and (max-width: 700px) {
+
+    .page {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    .box {
+        width: 90%;
+        max-width: 320px;
+        padding: 20px;
+    }
+    .sun, .moon, .star {
+        display: none;
+    }
 }
