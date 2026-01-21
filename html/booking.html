@@ -10,26 +10,73 @@
 
 <form class="booking-form">
 
-    <label>Vehicle Number</label><br>
-    <input type="text" placeholder="Enter vehicle number"><br><br>
+    <label>Vehicle Number</label>
+    <input type="text" placeholder="Enter vehicle number">
 
-    <label>Vehicle Type</label><br>
+    <label>Vehicle Type</label>
     <select>
-        <option>Select vehicle</option>
         <option>Bike</option>
         <option>Car</option>
-    </select><br><br>
+    </select>
 
-    <label>Parking Floor</label><br>
-    <select>
-        <option>Select floor</option>
-        <option>Ground Floor - Bikes</option>
-        <option>Level 1 - Bikes</option>
-        <option>Level 2 - Cars</option>
-        <option>Level 3 - Cars</option>
-    </select><br><br>
+    <p class="note">* Below layout shows parking availability</p>
 
-    <label>Parking Date</label><br>
+    <h3>Bike Parking – Floor 1</h3>
+    <div class="parking-grid">
+        <div class="spot available">B1-1</div>
+        <div class="spot taken">B1-2</div>
+        <div class="spot available">B1-3</div>
+        <div class="spot available">B1-4</div>
+        <div class="spot taken">B1-5</div>
+        <div class="spot available">B1-6</div>
+        <div class="spot available">B1-7</div>
+        <div class="spot taken">B1-8</div>
+        <div class="spot available">B1-9</div>
+        <div class="spot available">B1-10</div>
+        <div class="spot available">B1-11</div>
+        <div class="spot taken">B1-12</div>
+        <div class="spot available">B1-13</div>
+        <div class="spot available">B1-14</div>
+        <div class="spot available">B1-15</div>
+        <div class="spot available">B1-16</div>
+        <div class="spot available">B1-17</div>
+        <div class="spot taken">B1-18</div>
+        <div class="spot available">B1-19</div>
+        <div class="spot available">B1-20</div>
+        <div class="spot available">B1-21</div>
+        <div class="spot available">B1-22</div>
+        <div class="spot available">B1-23</div>
+        <div class="spot taken">B1-24</div>
+        <div class="spot available">B1-25</div>
+    </div>
+
+    <h3>Bike Parking – Floor 2</h3>
+    <div class="parking-grid">
+        <div class="spot available">B2-1</div>
+        <div class="spot taken">B2-2</div>
+        <div class="spot available">B2-3</div>
+        <div class="spot available">B2-4</div>
+        <div class="spot taken">B2-5</div>
+    </div>
+
+    <h3>Car Parking – Floor 1</h3>
+    <div class="parking-grid">
+        <div class="spot available">C1-1</div>
+        <div class="spot taken">C1-2</div>
+        <div class="spot available">C1-3</div>
+        <div class="spot available">C1-4</div>
+        <div class="spot taken">C1-5</div>
+    </div>
+
+    <h3>Car Parking – Floor 2</h3>
+    <div class="parking-grid">
+        <div class="spot available">C2-1</div>
+        <div class="spot taken">C2-2</div>
+        <div class="spot available">C2-3</div>
+        <div class="spot available">C2-4</div>
+        <div class="spot taken">C2-5</div>
+    </div>
+        <label>Parking Date</label><br>
     <input type="date"><br><br>
 
     <label>Entry Time</label><br>
@@ -38,6 +85,7 @@
     <label>Exit Time</label><br>
     <input type="time"><br><br>
 
+    <button type="submit">Book Parking</button>
     <button type="submit">Book Parking</button>
 
 </form>
