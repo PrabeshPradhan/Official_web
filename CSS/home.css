@@ -1,79 +1,96 @@
 :root {
-    --nav-size: 100%;
-    --img-pad: 10px 50px;
+    --img-pad: 10px 30px;
 }
+
 body {
-    background-image: linear-gradient(rgba(185, 179, 179, 0.9),rgba(79, 79, 105, 0.2),rgba(38, 42, 38, 0.8)),
-    url("../asset/main_bg.png");
+    background-image: linear-gradient (rgba(185, 179, 179, 0.9), rgba(79, 79, 105, 0.2), rgba(38, 42, 38, 0.8)), url("../asset/main_bg.png");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    margin: 20px;
+    margin: 10px;
+    font-family: Arial;
 }
 
 a {
     color: white;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 15px;
     padding: var(--img-pad);
     background: linear-gradient(grey, red, orange);
     border-radius: 10px;
-    gap: 20px;
+    flex-wrap: wrap;
 }
+
 .logo {
     margin-right: auto;
 }
+
 .nav-menu {
     display: flex;
-    gap: 20px;
-    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 #home,
 #features,
 #contact {
     background: rgba(26, 5, 5, 0.5);
-    padding: 20px;
-    margin: 20px 0;
+    padding: 15px;
+    margin: 15px 0;
     border-radius: 10px;
-    width: calc(100vw - 40px);
     min-height: 100vh;
-    box-sizing: border-box;
 }
 #top {
     text-align: center;
     text-decoration: underline blue;
     border: 2px solid grey;
-    padding: 10px;
+    padding: 8px;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 2px 4px 6px white;
 }
-
 @media screen and (max-width: 600px) {
+
     nav {
         flex-direction: column;
-        align-items: center;
         padding: 15px;
+        gap: 10px;
+    }
+
+    .logo {
+        margin: 0;
     }
 
     .nav-menu {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 16px;
+    }
+
+    #home,
+    #features,
+    #contact {
+        padding: 12px;
+        min-height: auto;
     }
 }
